@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Signup</title>
+</head>
+<body>
+  <h2>Signup</h2>
+  <form action="/signup" method="POST">
+    <label>Username:</label>
+    <input type="text" name="username" required placeholder="Enter unique username"><br>
+
+    <label>Channel Name:</label>
+    <input type="text" name="channel_name" required placeholder="Enter unique channel name"><br>
+
+    <label>Email:</label>
+    <input type="email" name="email" required placeholder="Enter your email"><br>
+
+    <label>Password:</label>
+    <input type="password" name="password" required placeholder="Enter your password"><br>
+
+    <label>Gender:</label><br>
+    <input type="radio" id="male" name="gender" value="Male" required>
+    <label for="male">Male</label><br>
+    <input type="radio" id="female" name="gender" value="Female" required>
+    <label for="female">Female</label><br>
+    <input type="radio" id="other" name="gender" value="Other" required>
+    <label for="other">Other</label><br>
+
+    <label>Age:</label>
+    <input type="number" name="age" min="1" required placeholder="Enter your age"><br><br>
+
+    <button type="submit">Signup</button>
+  </form>
+  <a href="/login">Already have an account? Login</a>
+</body>
+</html>
